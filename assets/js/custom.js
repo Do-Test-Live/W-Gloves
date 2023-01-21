@@ -8,12 +8,12 @@ jQuery(function ($) {
 		} else {
 			$('.main-nav').removeClass('menu-shrink');
 		}
-    });	
-    
+    });
+
 	// Mean Menu JS
 	jQuery('.mean-menu').meanmenu({
         meanScreenWidth: "991"
-	});	
+	});
 
 	// Search Box JS
 	$('.search-toggle').addClass('closed');
@@ -171,7 +171,7 @@ jQuery(function ($) {
 	// Timer JS
 	let getDaysId = document.getElementById('days');
 	if(getDaysId !== null){
-		
+
 		const second = 1000;
 		const minute = second * 60;
 		const hour = minute * 60;
@@ -194,7 +194,7 @@ jQuery(function ($) {
 		jQuery(".loader").fadeOut(500);
 	});
 
-	// Back to Top JS 
+	// Back to Top JS
 	$('body').append('<div id="toTop" class="back-to-top-btn"><i class="bx bxs-up-arrow-alt"></i></div>');
 	$(window).scroll(function () {
 		if ($(this).scrollTop() != 0) {
@@ -202,14 +202,11 @@ jQuery(function ($) {
 		} else {
 			$('#toTop').fadeOut();
 		}
-	}); 
+	});
 	$('#toTop').on('click', function(){
 		$("html, body").animate({ scrollTop: 0 }, 900);
 		return false;
 	});
-
-	// Buy Now Btn
-	$('body').append("<a href='https://themeforest.net/checkout/from_item/27772407?license=regular&support=bundle_6month&_ga=2.216602262.1657781501.1653794352-1356931366.1645330919' target='_blank' class='buy-now-btn'><img src='assets/img/envato.png' alt='envato'/>Buy Now</a>");
 
 	// Switch Btn
 	$('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
